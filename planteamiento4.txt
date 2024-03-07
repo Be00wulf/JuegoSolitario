@@ -1,0 +1,75 @@
+#include <iostream>
+using namespace std;
+#include "Carta.h"
+#include "Mazo.h"
+#include "Barajador.h"
+// #include "ListaDoblementeEnlazada.h"
+// #include "Queue.h"
+// #include "MovementDriver.h"
+#include "Node.h"
+#include<stdlib.h> //new y delete
+
+
+int main() {
+
+
+    // //MOSTRANDO NODO
+    // Mazo mazo;
+    // mazo.inicializar();
+    // mazo.barajar();
+
+    // //Node<Carta> nodo1 = new Node(mazo.sacarCarta());
+    // Node<Carta>* nodo1 = new Node<Carta>(mazo.sacarCarta());
+    // Node<Carta>* nodo2 = new Node<Carta>(mazo.sacarCarta());
+    // Node<Carta>* nodo3 = new Node<Carta>(mazo.sacarCarta());
+
+
+    // // Mostrar la carta del nodo
+    // std::cout << "Valor del nodo 1: ";
+    // nodo1->getValue().mostrarCarta();
+    // std::cout << std::endl;
+
+    // std::cout << "Valor del nodo 2: ";
+    // nodo2->getValue().mostrarCarta();
+    // std::cout << std::endl;
+
+    // std::cout << "Valor del nodo 3: ";
+    // nodo3->getValue().mostrarCarta();
+    // std::cout << std::endl;
+
+    // return 0;
+
+
+    //MAZO LLENO/VACIO
+    // Mazo mazo;
+    // mazo.inicializar();
+    // if (mazo.estaVacio()) {
+    //     std::cout << "El mazo está vacío." << std::endl;
+    // } else {
+    //     std::cout << "El mazo no está vacío." << std::endl;
+    // }
+
+
+    //MOSTRANDO MAZO REVUELTO                   
+    // Mazo mazo;
+    // mazo.inicializar();
+
+    // // Crear un barajador y revolver el mazo
+    // Barajador barajador(mazo.obtenerCartas());
+    // barajador.revolver();
+
+    // // Mostrar las cartas revueltas
+    // std::cout << "Cartas revueltas:" << std::endl;
+    // barajador.mostrarRevuelto();
+
+    //MOSTRANDO MAZO CREADO                 ^pa arriba mostrando pruebas
+        //Mazo mazo;
+        //const std::vector<Carta>& cartas = mazo.obtenerCartas();
+
+        // for (const Carta& carta : cartas) {
+        //     carta.mostrarCarta(); 
+        // }
+
+
+    //return 0;
+}
