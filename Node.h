@@ -28,6 +28,8 @@ public:
 };
 
 //#include "Node.cpp"  // Incluimos las definiciones de las funciones miembro aquí
+
+
 //INCLUYENDO
 template <typename T>
 Node<T>::Node(){

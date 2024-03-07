@@ -13,6 +13,9 @@ using namespace std;
 int main() {
 
 
+
+
+
     // //MOSTRANDO NODO
     // Mazo mazo;
     // mazo.inicializar();
@@ -40,6 +43,9 @@ int main() {
     // return 0;
 
 
+
+
+
     //MAZO LLENO/VACIO
     // Mazo mazo;
     // mazo.inicializar();
@@ -48,6 +54,9 @@ int main() {
     // } else {
     //     std::cout << "El mazo no está vacío." << std::endl;
     // }
+
+
+
 
 
     //MOSTRANDO MAZO REVUELTO                   

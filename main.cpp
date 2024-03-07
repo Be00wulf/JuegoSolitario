@@ -1,10 +1,12 @@
 #include <iostream>
 using namespace std;
+
 #include "Carta.h"
 #include "Mazo.h"
 #include "Barajador.h"
+#include "Queue.h"
+
 // #include "ListaDoblementeEnlazada.h"
-// #include "Queue.h"
 // #include "MovementDriver.h"
 #include "Node.h"
 #include<stdlib.h> //new y delete
@@ -13,29 +15,33 @@ using namespace std;
 int main() {
     //MENU
 
-    //MOSTRANDO NODO
+    //MOSTRANDO MAZO BARAJADO
     Mazo mazo;
     mazo.inicializar();
     mazo.barajar();
 
-    //Node<Carta> nodo1 = new Node(mazo.sacarCarta());
-    Node<Carta>* nodo1 = new Node<Carta>(mazo.sacarCarta());
-    Node<Carta>* nodo2 = new Node<Carta>(mazo.sacarCarta());
-    Node<Carta>* nodo3 = new Node<Carta>(mazo.sacarCarta());
+    Barajador barajador(mazo.obtenerCartas());
+    std::cout << "Cartas revueltas:" << std::endl;
+    barajador.mostrarRevuelto();
 
+    std::cout << "\n\n" << std::endl;
 
-    // Mostrar la carta del nodo
-    std::cout << "Valor del nodo 1: ";
-    nodo1->getValue().mostrarCarta();
-    std::cout << std::endl;
+    // Crear una cola para almacenar las cartas
+    Queue<Carta> cola;
 
-    std::cout << "Valor del nodo 2: ";
-    nodo2->getValue().mostrarCarta();
-    std::cout << std::endl;
+    // Llenar la cola con las primeras 24 cartas del mazo
+    for (int i = 0; i < 24; ++i) {
+        cola.add(mazo.sacarCarta());
+    }
 
-    std::cout << "Valor del nodo 3: ";
-    nodo3->getValue().mostrarCarta();
-    std::cout << std::endl;
+    // Mostrar cómo funciona la cola sacando y mostrando las cartas
+    std::cout << "Cartas en la cola:" << std::endl;
+    while (!cola.isEmpty()) {
+        Carta carta = cola.remove();
+        std::cout << "Valor de la carta: ";
+        carta.mostrarCarta();
+        std::cout << std::endl;
+    }
 
 
     return 0;

@@ -69,3 +69,18 @@ Primero, crea 7 listas doblemente enlazadas en las cuales se iran almacenando la
 Segundo, Recibe las cartas del barajador y las va colocando de forma ascendente en las 7 pilas, de 1 a 7 cartas, donde solo la última carta podrá ser visible inicialmente
 
 Tercero, se deben mostrar  como quedaron las 7 listas
+
+
+IMPORTANTE AL GIT
+podemos comenzar ddesde la terminal de VSC
+creamos un .gitignore dentro de los archivos donde estamos trabajando
+
+en la terminal: git init                  iniciamos git
+git status                                archivos pendientes
+git add main.cpp                          agregando archivos individuales
+git add .                                 agregando todos los archivos 
+git commit -m " "                         agregando nota a la version
+git log                                   datos y fecha
+creamos un repositorio en github          
+git add origin https://github.com(...)    agregar direccion
+git push origin master                    subimos version

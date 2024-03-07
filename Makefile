@@ -1,7 +1,7 @@
-#IMPORTANTE: 
+#IMPORTANTE: en la terminal
 #	1-> make, para crear .o		
-#	2-> ./programa, para ejecutar 		CAMBIAR NOMBRE
-#	3-> make clean, es necesario limpiar y reiniciar .o para probar de nuevo
+#	2-> ./programa, para ejecutar 		CAMBIAR NOMBRE programa
+#	3-> make clean, es necesario limpiar y reiniciar .o para probar una nueva compilacion
 
 #compilador 
 CXX = g++
@@ -10,7 +10,7 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Wall
 
 #Archivos fuente
-#MAIN: Node.cpp
+#MAIN: Node.cpp		Queue.h
 SRCS = main.cpp Carta.cpp Mazo.cpp Barajador.cpp
 #SRCS = main.cpp Node.cpp Carta.cpp Mazo.cpp Barajador.cpp 
 
