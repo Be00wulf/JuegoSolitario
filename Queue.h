@@ -30,10 +30,10 @@
     }
 
     /*
-    * Metodo encargado de insertar un nuevo elemento en el final  de la cola.
-    * Crea un nuevo nodo con el valor que recibe como parametro y asigna el end al nodo creado.
-    * Si las lista se encuentra vacia se asigna al header el nodo creado, de lo contario se 
-    * establece el siguiente del nodo apuntado por el end hacia el nodo recien creado. 
+    * Función: Insertar elemento al final de la cola
+    * Asignar nuevo nodo al final (end)
+    * Si la lista está vacía, asignarlo también al inicio (header)
+    * Si no, enlazarlo al final
     */
     template <typename T>
     void Queue<T>::add(T value){
@@ -48,12 +48,12 @@
     }
 
     /*
-    * Metodo encargado de remover el elemento de la cima de la cola.
-    *  1. crea un nuevo nodo que apunta hacia el header.
-    *  2. Se establece el header al siguiente del nodo actual.
-    *  3. Se almacena el valor contenido dentro del nodo actual.
-    *  4. Se elimina el nodo actual. 
-    *  5. Se retorna el valor almacenado.
+    * Función:Remover elemento de la cima de la cola
+    * Crear nodo temporal al header
+    * Avanzar header al siguiente
+    * Almacenar valor del header actual
+    * Eliminar header actual
+    * Retornar valor almacenado
     */
     template <typename T>
     T Queue<T>::remove(){
@@ -67,8 +67,8 @@
     }
 
     /*
-    * Metodo encargado de obtener y devolver el valor contenido en la cima de la cola.
-    * Devuelve el valor contenido dentro del nodo que es apuntado por header.
+    * Función: Obtener valor de la cima de la cola
+    * Devolver valor del header
     */
     template <typename T>
     T Queue<T>::peek() {
@@ -78,8 +78,8 @@
     }
 
     /*
-    * Metodo encargado de validar si la cola se encuentra vacia.
-    * Si el puntero header apunta a NULL devuelve true.
+    * Función: validar si la cola esta vacia
+    * Si el puntero header apunta a NULL devuelve true
     */
     template <typename T>
     bool Queue<T>::isEmpty(){
@@ -87,7 +87,7 @@
     }
 
     /*
-    * Metodo encargado de vaciar la cola.
+    * Función: vaciar la cola.
     * Recorre cada nodo hasta que la cola se encuentre vacia, elimina cada nodo recorrido.
     */
     template <typename T>
@@ -101,7 +101,7 @@
     }
 
     /*
-    * Metodo encargado de verificar si la cola esta vacia y lanzar una excepcion.
+    * Función: verificar si la cola esta vacia y lanzar una excepcion.
     * Caso contario devuelve false.
     */
     template <typename T>

@@ -24,10 +24,7 @@ Clase barajador
 ***Para las estructuras revisar la funcionalidad de si están vacías 
 
 CLASE NODO
-
-Clase lista doblemente enlazada
-     Recibe las cartas del barajador de forma ascendente en las 7 pilas, de 1 a 7 cartas, solo la última carta podrá ser visible 
-     "Tiene la función de que el jugador puede seleccionar desde donde desea mover las cartas a otra lista varias veces 
+      definiendo la estructura del nodo con punteros 
 
 Clase cola
       Recibe las cartas que sobran y las coloca en la primera  cola
@@ -35,6 +32,12 @@ Clase cola
      La segunda cola recibirá las cartas de la primera cola una a una y al recibirla podrá ser visible,.solo de acá podrá sacar cartas el jugador 
       Tiene la función que se puede sacar una carta de ahí de la segunda para la pila o para las listas
       Tiene la función demostrar cuántas cartas hay en la 1ra cola 
+
+
+Clase lista doblemente enlazada
+     Recibe las cartas del barajador de forma ascendente en las 7 pilas, de 1 a 7 cartas, solo la última carta podrá ser visible 
+     "Tiene la función de que el jugador puede seleccionar desde donde desea mover las cartas a otra lista varias veces 
+
 
 Clase pila 
        Esta solo recibe las cartas en un orden desde el As hasta la K de forma ordenada
@@ -84,3 +87,6 @@ git log                                   datos y fecha
 creamos un repositorio en github          
 git add origin https://github.com(...)    agregar direccion
 git push origin master                    subimos version
+
+
+comentando funcionalidades en la cola

@@ -60,3 +60,14 @@ std::ostream& operator<<(std::ostream& os, const Carta& carta) {
     os << carta.getValor() << " " << carta.getTipo() << " " << carta.getColor();
     return os;
 }
+
+//probando el toString para mostrar la carta
+std::string Carta::toString() const {
+    std::string result;
+    if (estaVolteada) {
+        result += valor + " " + tipo + " " + color;
+    } else {
+        result += "Carta volteada";
+    }
+    return result;
+}

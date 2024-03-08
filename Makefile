@@ -10,7 +10,7 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Wall
 
 #Archivos fuente
-#MAIN: Node.cpp		Queue.h
+#MAIN: Node.cpp		Queue.h		DoublyLinkedList.h		
 SRCS = main.cpp Carta.cpp Mazo.cpp Barajador.cpp
 #SRCS = main.cpp Node.cpp Carta.cpp Mazo.cpp Barajador.cpp 
 

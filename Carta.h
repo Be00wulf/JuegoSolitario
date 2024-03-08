@@ -27,6 +27,9 @@ public:
 
     void voltearCarta();
     void mostrarCarta() const; //si esta volteada
+
+
+    std::string toString() const;   //pribando mostrar el valor de la carta
 };
 
 #endif // CARTA_H
