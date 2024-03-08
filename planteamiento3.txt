@@ -79,14 +79,14 @@ podemos comenzar ddesde la terminal de VSC
 creamos un .gitignore dentro de los archivos donde estamos trabajando
 
 en la terminal: git init                  iniciamos git
-git status                                archivos pendientes
+      git status                                archivos pendientes
 git add main.cpp                          agregando archivos individuales
-git add .                                 agregando todos los archivos 
-git commit -m " "                         agregando nota a la version
+      git add .                                 agregando todos los archivos 
+      git commit -m " "                         agregando nota a la version
 git log                                   datos y fecha
 creamos un repositorio en github          
 git add origin https://github.com(...)    agregar direccion
-git push origin master                    subimos version
+      git push origin master                    subimos version
 
 
 comentando funcionalidades en la cola

@@ -11,6 +11,70 @@ using namespace std;
 
 
 int main() {
+                                                    //MOSTRANDO 4 pilas
+    Mazo mazo;
+    mazo.inicializar();
+    mazo.barajar();
+
+    Barajador barajador(mazo.obtenerCartas());
+    barajador.mostrarRevuelto();
+    std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << std::endl;
+
+    // Crear cuatro pilas
+    Stack<Carta> pila1;
+    Stack<Carta> pila2;
+    Stack<Carta> pila3;
+    Stack<Carta> pila4;
+
+    // Apilar cartas en las pilas
+    for (int i = 0; i < 52; ++i) {
+        Carta carta = mazo.sacarCarta();
+
+        // Distribuir las cartas en las cuatro pilas
+        if (i < 13) {
+            pila1.push(carta);
+        } else if (i < 26) {
+            pila2.push(carta);
+        } else if (i < 39) {
+            pila3.push(carta);              /////   DESDE ABAJO 1 A 13 ...
+        } else {
+            pila4.push(carta);
+        }
+    }
+
+    // Mostrar las cartas en las pilas
+    std::cout << "Pila 1: ";
+    while (!pila1.isEmpty()) {
+        pila1.pop().mostrarCarta();
+    }
+    std::cout << std::endl;
+
+    std::cout << "Pila 2: ";
+    while (!pila2.isEmpty()) {
+        pila2.pop().mostrarCarta();
+    }
+    std::cout << std::endl;
+
+    std::cout << "Pila 3: ";
+    while (!pila3.isEmpty()) {
+        pila3.pop().mostrarCarta();
+    }
+    std::cout << std::endl;
+
+    std::cout << "Pila 4: ";
+    while (!pila4.isEmpty()) {
+        pila4.pop().mostrarCarta();
+    }
+    std::cout << std::endl;
+                
+
+
+
+
+
+
 
                                                     //MOSTRANDO 7 LISTAS ListaDoblementeEnlazadas 
         // Inicializar el mazo y barajar las cartas
